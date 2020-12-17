@@ -17,6 +17,8 @@ public class myjdbcConnectionTest {
 			Connection conn =DriverManager.getConnection(url , userName, password);
 			System.out.println(conn.getMetaData());
 			conn.close();
+			
+			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

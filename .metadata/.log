@@ -10295,3 +10295,6 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.jsp.core 4 4 2020-12-17 15:54:02.943
+!MESSAGE A workspace crash was detected. The previous session did not exit normally. Not using saved taglib indexes.
