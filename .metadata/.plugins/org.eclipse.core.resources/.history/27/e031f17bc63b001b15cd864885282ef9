@@ -1,0 +1,13 @@
+package com.customerFormValidations;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/")
+public class CustomerFormValiationController {
+
+	public String homepage() {
+		return "HomePage";// Create home page of this name
+	}
+}

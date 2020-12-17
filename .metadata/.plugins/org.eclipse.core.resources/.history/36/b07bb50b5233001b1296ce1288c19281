@@ -1,0 +1,12 @@
+package www.SpringAnnotations;
+
+public class MyCarApp {
+
+	public static void main(String[] args) {
+		
+		SedarCarImplmentor sedanCar;
+		
+
+	}
+
+}

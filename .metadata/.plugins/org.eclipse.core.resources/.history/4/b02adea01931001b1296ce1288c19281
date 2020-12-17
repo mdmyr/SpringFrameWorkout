@@ -1,0 +1,5 @@
+package com.springConstructorInjection;
+// this is a simple class which explains the categories in the driver.
+public class DriverCategory {
+
+}

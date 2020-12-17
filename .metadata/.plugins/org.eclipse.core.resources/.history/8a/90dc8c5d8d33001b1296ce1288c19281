@@ -1,0 +1,7 @@
+package com.SpringQualifier;
+
+public interface Animal {
+	public void head();
+	public void tail();
+	pbulic void legs();
+}

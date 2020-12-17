@@ -1,0 +1,17 @@
+package www.beanScope.com;
+
+public class SedanCar implements VehicleInterface {
+
+	@Override
+	public void breaks() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void gas() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

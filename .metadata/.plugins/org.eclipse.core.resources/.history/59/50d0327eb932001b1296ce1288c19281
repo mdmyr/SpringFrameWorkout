@@ -1,0 +1,16 @@
+package www.essentials.SpringCaller;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+public class MyEssentialSpringCar {
+	
+	
+	public static void main(String[] args) {
+		
+		//bean intialization, before that check the libraries and build path
+		ClassPathXmlApplicationContext context =  new ClassPathXmlApplicationContext("Bean.xml");
+		
+		//retrieve the bean		
+		SedanCar = context.getBean("SedanCarBean", SedanCarBean.class);
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.annotations.scopes;
+
+public class SuvCarImple implements VehicleI {
+
+	@Override
+	public void start() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void stop() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void gas() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

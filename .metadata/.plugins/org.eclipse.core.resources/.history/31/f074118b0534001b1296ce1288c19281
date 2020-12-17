@@ -1,0 +1,20 @@
+package com.annotations.scopes;
+
+public class SuvCarImple implements VehicleI {
+
+	@Override
+	public void start() {
+
+	}
+
+	@Override
+	public void stop() {
+
+	}
+
+	@Override
+	public void gas() {
+
+	}
+
+}

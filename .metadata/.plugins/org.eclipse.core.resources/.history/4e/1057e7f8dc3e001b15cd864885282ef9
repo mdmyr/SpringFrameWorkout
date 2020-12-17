@@ -1,0 +1,17 @@
+package com.springHibernateCustomerVendor;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+
+// define table as entity and the define the tablename here
+@Entity
+@Table(name = "customer")
+public class CustomerEntity {
+
+	@Column(name = "first_name")
+	private String firstName;
+	
+	
+}

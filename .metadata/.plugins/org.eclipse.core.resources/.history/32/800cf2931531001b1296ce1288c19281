@@ -1,0 +1,29 @@
+
+public class SuvCarBlack implements Vehicle {
+
+	private SuvCar suvBlack;
+	public  String SuvCarBlack() {
+		System.out.println("Nothing here !!");
+		return "SuperMan";
+	}
+	public SuvCarBlack(SuvCar carType) {
+		System.out.println("Am in the constructor");
+		this.suvBlack=carType;
+	}
+
+	@Override
+	public void vehicleType() {
+		suvBlack.vehicleType();
+		
+	}
+
+	@Override
+	public void vehicleColor() {
+		//suvBlack.vehicleColor();
+		System.out.println("Modified to Black");
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,8 @@
+package www.SpringAnnotations;
+
+public class MyHumanApp {
+
+	public static void main(String[] args) {
+		System.out.println(" Started my human app \n");
+	}
+}

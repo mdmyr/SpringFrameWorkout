@@ -1,0 +1,29 @@
+package www.essentials.cars;
+
+public class essentialsCarAddonSafety implements CarEssentials {
+
+	@Override
+	public void breaks() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void wipers() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void gas() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void wheels() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

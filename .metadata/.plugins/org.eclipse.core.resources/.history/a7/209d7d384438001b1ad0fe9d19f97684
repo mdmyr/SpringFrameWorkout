@@ -1,0 +1,14 @@
+package com.springformTagSubmit;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/forms") // this is the main head
+public class studentController {
+		@RequestMapping("/student")
+		public String studentForm() {
+			
+			return "returnStudentStatus";
+		}
+}

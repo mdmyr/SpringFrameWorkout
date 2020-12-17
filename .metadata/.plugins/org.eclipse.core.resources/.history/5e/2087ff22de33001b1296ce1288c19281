@@ -1,0 +1,18 @@
+package com.SpringQualifier;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MyAnimalsApp {
+
+	public static void main(String[] args) {
+		
+		Animal humans;
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("Bean.xml");
+		
+		humans = context.getBean("humans",Animal.class);
+		
+		
+		
+	}
+
+}

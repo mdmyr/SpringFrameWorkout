@@ -1,0 +1,13 @@
+package com.annotations.scopes;
+
+import javax.management.loading.PrivateClassLoader;
+
+public class MyVehichleApp {
+
+	public static void main(String[] args) {
+		
+		 SuvCarImple suvBlack;
+		System.out.println();
+	}
+
+}

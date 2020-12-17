@@ -1,0 +1,30 @@
+package www.SpringAnnotations;
+
+import org.springframework.context.annotation.ComponentScans;
+import org.springframework.stereotype.Component;
+
+@Component
+public class SedarCarImplmentor implements VehicleInterface {
+	SuvImplementor suvblack;
+	
+	public void setSuvblack(SuvImplementor suvblack) {
+		this.suvblack = suvblack;
+	}
+
+	@Override
+	public void breaks() {
+		System.out.println("Applying breaks");
+	}
+
+	@Override
+	public void gas() {
+		System.out.println("Applying gas!!");
+	}
+	
+	
+	public void getSUVColor(){
+		System.out.println("Car Type is :" + suvblack.carType() );
+		System.out.println("Car Color is : " + suvblack.color());
+	}
+
+}

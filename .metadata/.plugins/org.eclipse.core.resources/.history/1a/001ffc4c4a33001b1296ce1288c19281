@@ -1,0 +1,13 @@
+package www.beanScope.com;
+
+public class MyCarApp {
+
+	public static void main(String[] args) {
+
+		//initiate bean
+		// Retrieve bean
+		//call methods after bean returns an object
+		// close the bean context
+	}
+
+}

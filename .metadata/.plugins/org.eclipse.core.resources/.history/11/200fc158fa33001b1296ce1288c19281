@@ -1,0 +1,46 @@
+package com.SpringQualifier;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Random;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class WildAnimals implements Animal {
+
+	@Override
+
+	public void head() {
+		System.out.println("Animals have heads");
+	}
+
+	@Override
+	public void tail() {
+		System.out.println("Animals may have tails");
+	}
+
+	@Override
+	public void legs() {
+		System.out.println("Animals may have legs");
+	}
+	
+	
+	
+	// method that returns as random string
+	
+//	1. create a arrayslist of good thoughts
+//	2. create a methods to return the random thought from thelist
+//	
+	public String[] randomThought= {"1" , "2","Thought3" };
+	
+	
+	public void getRandomThought(){
+		Random randomThought = new Random();
+		randomThought.toString().length();
+		randomThought.ints(randomThought.)
+	}
+	
+
+
+}

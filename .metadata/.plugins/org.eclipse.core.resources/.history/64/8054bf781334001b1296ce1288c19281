@@ -1,0 +1,31 @@
+package com.javaClassAnnotations;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import javax.annotation.PostConstruct;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+
+@Configuration
+@PropertySource("classpath:Logging.properties")
+public class LoggingLeverSetter {
+
+	@Value("${root.logger.level}")
+	private String rootloggerLevel;
+	@Value("${printer.logger.leve}")
+	private String printedLoggerLevel;
+	
+	@PostConstruct
+	public void initLogger() {
+		Level rootlevel = Level.parse(rootloggerLevel);
+		Level printedLever =Level.parse(printedLoggerLevel);
+		
+		Logger applicationContexLogger = Logger.getLogger((AnnotationConfigApplicationContext.class.getName());
+		
+	}
+	
+}

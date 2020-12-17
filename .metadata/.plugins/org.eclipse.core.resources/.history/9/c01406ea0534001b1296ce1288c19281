@@ -1,0 +1,8 @@
+package com.annotations.scopes;
+
+public class MyVehichleApp {
+
+	public static void main(String[] args) {
+	}
+
+}

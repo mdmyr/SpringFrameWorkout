@@ -1,0 +1,45 @@
+package com.beanLifeCycle;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class SedanMaster implements vehicleInter {
+@Value("${foo.email}")
+	private String email;
+@Value("${foo.location}")
+	private String location;
+	
+	
+
+
+public String getStart() {
+	return start;
+}
+
+public String getStop() {
+	return stop;
+}
+
+
+	@Autowired
+	SedanCars sedanCar;
+	
+	@Override
+	public void start() {
+		sedanCar.start(); 
+	}
+
+	@Override
+	public void stop() {
+		sedanCar.stop();
+	}
+	
+	
+	public void status() {
+		System.out.println(getStart());
+	}
+	
+
+}

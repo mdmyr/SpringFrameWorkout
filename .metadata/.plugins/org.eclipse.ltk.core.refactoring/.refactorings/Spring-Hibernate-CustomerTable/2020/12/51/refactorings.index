@@ -1,0 +1,6 @@
+1608040029633	Delete element
+1608040621828	Rename resource 'Hibernate.cfg.xml'
+1608040756882	Rename package 'com.springHibernateCustomerVendor'
+1608042145415	Move compilation unit
+1608054143817	Extract method 'insertData'
+1608055302328	Infer generic type arguments

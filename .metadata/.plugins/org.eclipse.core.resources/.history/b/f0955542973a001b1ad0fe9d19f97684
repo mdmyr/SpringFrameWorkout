@@ -1,0 +1,43 @@
+<%@taglib uri = "http://www.springframework.org/tags/form" prefix = "form"%>
+
+<html>
+<head>Student Submission form</head>
+<body>
+<b> This is a simple submission form for the student</b>
+
+<br>
+
+
+<!-- This is the object needed to be created in the student class 
+1. class need to created "Student"
+2. class needed to validate the Student Form - StudentValidation
+ -->
+ 
+ <form:form action="ProcessStudentform" modelAttribute="Student">
+ <br>
+ First Name :<form:input path="firstName"/><br>
+ Last Name  :<form:input path="lastName"/><br>
+ Location   :<form:input path= "location"/><br>
+
+ Radio button : 
+<%--  java <form:radiobutton path="language" value="Java"/> --%>
+ 
+ <br>			
+ New Country Format:
+
+	    <form:select path="country"> 
+	     <form:options items="${countrylkp}" />
+	    </form:select>
+ Radio button : 	    
+	    <form:select path="language">
+	    	<form:options items="${programminglkp}"/>
+	    </form:select>
+ 	
+ 
+ 	  <form:radiobutton path="language" value="${programminglkp }"/>
+ 	  
+ <input type="Submit" value = "submit">
+</form:form>
+
+</body>
+</html>

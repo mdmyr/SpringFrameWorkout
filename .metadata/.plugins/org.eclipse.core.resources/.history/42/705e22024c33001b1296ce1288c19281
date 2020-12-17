@@ -1,0 +1,22 @@
+package www.beanScope.com;
+
+public class SedanCar implements VehicleInterface {
+   // private counter for the initiations.
+	private int counter=0;
+	@Override
+	public void breaks() {
+		counter= counter+1;
+		System.out.println("Sedan :Applied Breaks");
+
+	}
+
+	@Override
+	public void gas() {
+		
+		System.out.println("Sedan : Push the gas!!!");
+	}
+
+	public void counters(){
+		System.out.println("Number of times object initiated :" + counter);
+	}
+}

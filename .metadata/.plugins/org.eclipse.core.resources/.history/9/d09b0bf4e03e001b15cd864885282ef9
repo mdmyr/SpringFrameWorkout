@@ -1,0 +1,46 @@
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.springHibernateCustomerVendorEntities.CustomerEntity;
+
+public class HibernateSessionCreator {
+
+	// you need  1. entities 2 .connection cfg.xml
+	public static void main(String[] args) {
+		
+		
+		//factory 
+		SessionFactory factory =
+		 new Configuration()
+		 	.configure("Hibernate_self.cfg.xml")
+		 	.addAnnotatedClass(CustomerEntity.class)
+		 	.buildSessionFactory();
+		
+		
+		//current session 
+		Session session  = 	factory.getCurrentSession();
+		
+		//create the customer object 
+		CustomerEntity customer= new CustomerEntity("YuvaRaj", "Raghunapu", "YRAGHUNAPU@GMAIL.COM");
+		
+		try {
+			
+			System.out.println("Begin transactoin");
+			session.beginTransaction();
+			session.beginTransaction().begin();
+			session.save(customer);
+			
+			session.beginTransaction().commit();
+			session.close();
+			System.out.println("Committed");
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+}

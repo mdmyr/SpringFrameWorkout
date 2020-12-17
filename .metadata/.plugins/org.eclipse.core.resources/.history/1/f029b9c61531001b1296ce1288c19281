@@ -1,0 +1,12 @@
+
+public class SuvCarManf {
+
+	public static void main(String[] args) {
+		
+		SuvCarBlack suvBlack=  new SuvCarBlack() ;
+		
+		System.out.println(suvBlack.vehicleColor());
+
+	}
+
+}

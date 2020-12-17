@@ -1,0 +1,12 @@
+package www.SpringAnnotations;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MyHumanApp {
+
+	public static void main(String[] args) {
+		System.out.println(" Started my human app \n");
+		
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("Bean.xml")
+	}
+}

@@ -1,0 +1,23 @@
+package com.annotations.scopes;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class SuvCarImple implements VehicleI {
+
+	@Override
+	public void start() {
+		System.out.println("SUV Started");
+	}
+
+	@Override
+	public void stop() {
+		System.out.println(" SUV Stopped ");
+	}
+
+	@Override
+	public void gas() {
+		System.out.println(" SUV pushed the gas");
+	}
+
+}

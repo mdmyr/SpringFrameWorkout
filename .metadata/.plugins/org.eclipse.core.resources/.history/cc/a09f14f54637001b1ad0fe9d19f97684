@@ -1,0 +1,18 @@
+package com.springmvcFormDisplay;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class AppController {
+	
+		@RequestMapping("/showForm")
+		public String displayForm() {
+			return "displayForm";
+		}
+		
+		@RequestMapping("/responseForm")
+		public String reponseForm() {
+			return "reponseForm";
+		}
+}

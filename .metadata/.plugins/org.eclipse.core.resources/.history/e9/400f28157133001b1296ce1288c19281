@@ -1,0 +1,17 @@
+package www.SpringAnnotations;
+
+public class Dogs implements Animals {
+
+	@Override
+	public void noOFLegs() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void noOfHands() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

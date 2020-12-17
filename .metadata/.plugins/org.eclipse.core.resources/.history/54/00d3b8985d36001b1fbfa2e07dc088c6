@@ -1,0 +1,15 @@
+package com.beanLifeCycle;
+
+public class SedanCars implements vehicleInter {
+
+	@Override
+	public void start() {
+
+	}
+
+	@Override
+	public void stop() {
+
+	}
+
+}

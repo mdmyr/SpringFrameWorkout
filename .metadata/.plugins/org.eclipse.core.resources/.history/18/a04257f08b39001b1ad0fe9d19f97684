@@ -1,0 +1,12 @@
+package com.springmvcDropdown;
+
+
+	public class Student {
+
+		public String FirstName;
+		public String LastName;
+		public String Location;
+		
+		
+	
+}

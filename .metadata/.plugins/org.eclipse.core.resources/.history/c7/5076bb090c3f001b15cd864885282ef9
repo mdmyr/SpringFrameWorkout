@@ -1,0 +1,86 @@
+package com.springHibernateConnection;
+
+import java.sql.Date;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.springHibernateCustomerVendorEntities.CustomerEntity;
+
+public class HibernateSessionCreator {
+
+	// you need  1. entities 2 .connection cfg.xml
+	public static void main(String[] args) {
+		
+		
+		//factory 
+		SessionFactory factory =
+		 new Configuration()
+		 	.configure("Hibernate_self.cfg.xml")
+		 	.addAnnotatedClass(CustomerEntity.class)
+		 	.buildSessionFactory();
+		
+		
+		//current session 
+		Session session  = 	factory.getCurrentSession();	
+		
+		
+		
+			printDate();
+			session.beginTransaction();
+			
+		
+			
+		try {
+			
+			List<CustomerEntity> customers= 
+						session.createQuery("select id, firsName,lastName,locaton from CustomerEntity").getResultList();
+		
+			System.out.println("Here");
+			System.out.println(customers.toString());
+			
+			
+			for(CustomerEntity cust :customers) {
+				System.out.println(cust);
+			}
+			
+			System.out.println("here");
+			for (int i = 0; i < 10; i++) {
+				insertData(session);
+			}
+			
+			
+			
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		 session.close();	
+		 printDate();
+		
+	}
+
+	private static void insertData(Session session) {
+		CustomerEntity customer= new CustomerEntity("YuvaRaj", "Raghunapu", "Hyderabad");
+		//session.beginTransaction().begin();
+		session.save(customer);
+		
+		//session.beginTransaction().commit();
+		//session.close();
+		//System.out.println("Committed");
+	}
+
+	private static void printDate() {
+		//System.out.println("Begin transaction");
+		Calendar calendar = Calendar.getInstance(); 
+		SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+		System.out.println(formatter.format(calendar.getTime()));
+				
+	}
+	
+}

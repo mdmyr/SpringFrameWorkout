@@ -1,0 +1,32 @@
+package com.springmvcDropdown;
+
+
+	public class Student {
+
+		private String firstName;
+		private String fastName;
+		private String focation;
+		
+		
+		public String getFirstName() {
+			return firstName;
+		}
+		public void setFirstName(String firstName) {
+			firstName = firstName;
+		}
+		public String getLastName() {
+			return lastName;
+		}
+		public void setLastName(String lastName) {
+			lastName = lastName;
+		}
+		public String getLocation() {
+			return location;
+		}
+		public void setLocation(String location) {
+			location = location;
+		}
+		
+		
+	
+}

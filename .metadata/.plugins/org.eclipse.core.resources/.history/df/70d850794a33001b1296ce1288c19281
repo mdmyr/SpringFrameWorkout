@@ -1,0 +1,21 @@
+package www.beanScope.com;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MyCarApp {
+
+	public static void main(String[] args) {
+
+		//initiate bean
+		// add required jar files 
+		// add folder to the build path.
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("bean.xml")
+		
+		
+		// Retrieve bean
+		
+		//call methods after bean returns an object
+		// close the bean context
+	}
+
+}

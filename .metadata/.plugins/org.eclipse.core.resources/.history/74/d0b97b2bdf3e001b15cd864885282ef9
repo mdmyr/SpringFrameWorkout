@@ -1,0 +1,7 @@
+
+public class HibernateSessionCreator {
+
+	// you need  1. entities 2 .connection cfg.xml
+	
+	
+}

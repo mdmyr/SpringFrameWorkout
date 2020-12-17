@@ -1,0 +1,37 @@
+package com.SpringQualifier;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Humans implements Animal {
+@Autowired
+@Qualifier("acqualicLife")
+	private Animal beings;
+	
+	@Override
+	public void head() {
+		System.out.println("Human Head");
+
+	}
+
+	@Override
+	public void tail() {
+		System.out.println("Humans have no tails");
+
+	}
+
+	@Override
+	public void legs() {
+		System.out.println("Humans have two legs");
+
+	}
+	
+	public void getBeingDetails() {
+		beings.head();
+		beings.legs();
+		beings.tail();
+	}
+
+}

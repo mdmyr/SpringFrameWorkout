@@ -1,0 +1,23 @@
+package com.SpringFormTag;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class StudenValidationController {
+	
+	//this the method invoked in the .jsp page on submit
+	@RequestMapping("/validateStudent")
+	public String  validateStudent(Model model) {
+		
+		return "Student-Status";
+	}
+	
+	
+	@RequestMapping("/")
+	public String welcomePage() {
+		return "Welcome";
+	}
+
+}

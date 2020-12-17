@@ -1,0 +1,16 @@
+package com.javaClassAnnotations;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+
+@Configuration
+@PropertySource("classpath:Logging.properties")
+public class LoggingLeverSetter {
+
+	@Value("${root.logger.level}")
+	private String rootloggerLevel;
+	@Value("${printer.logger.leve}")
+	private String printedLoggerLevel;
+	
+}

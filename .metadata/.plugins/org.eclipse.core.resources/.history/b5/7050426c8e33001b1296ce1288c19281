@@ -1,0 +1,27 @@
+package com.SpringQualifier;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Humans implements Animal {
+
+	
+	@Override
+	public void head() {
+		System.out.println("Human Head");
+
+	}
+
+	@Override
+	public void tail() {
+		System.out.println("Humans have no tails");
+
+	}
+
+	@Override
+	public void legs() {
+		System.out.println("Humans have two legs");
+
+	}
+
+}

@@ -1,0 +1,20 @@
+package com.beanLifeCycle;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class SedanMaster implements vehicleInter {
+
+	SedanCars sedanCar;
+	
+	@Override
+	public void start() {
+		sedanCar.start();
+	}
+
+	@Override
+	public void stop() {
+		sedanCar.stop();
+	}
+
+}

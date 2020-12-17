@@ -1,0 +1,14 @@
+package com.springmvcDropdown;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/forms")
+public class StudentformController {
+	// Home page 
+	@RequestMapping("/StudentValidationForm")
+	public String StudentValidationForm() {
+		return "StudentValidationForm";
+	}
+}

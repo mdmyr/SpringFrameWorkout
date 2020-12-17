@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+Hello welcome to the main page.
+Please click here to move to Student form submission. 
+
+<a>
+<form>
+<input type="button" value="Submit a Student">
+</form>
+
+
+</a>
+
+
+</body>
+</html>

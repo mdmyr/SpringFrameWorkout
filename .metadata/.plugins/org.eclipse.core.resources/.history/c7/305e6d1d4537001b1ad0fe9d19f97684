@@ -1,0 +1,6 @@
+package com.springmvcFormDisplay;
+
+@Controller
+public class AppController {
+
+}

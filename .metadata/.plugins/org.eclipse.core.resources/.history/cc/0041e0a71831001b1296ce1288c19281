@@ -1,0 +1,15 @@
+package com.springConstructorInjection;
+
+/**
+ * @author Yuvi
+ * this can be used for the registration of the commercial drivers.
+ *
+ */
+public class DriverRegistration {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

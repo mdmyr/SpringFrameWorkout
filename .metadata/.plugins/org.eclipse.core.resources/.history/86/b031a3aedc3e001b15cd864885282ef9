@@ -1,0 +1,5 @@
+package com.springHibernateCustomerVendor;
+
+public class CustomerEntity {
+
+}

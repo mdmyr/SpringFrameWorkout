@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;spring-mvc-demo-servlet.xml, web.xml&apos; to &apos;WEB-INF&apos;" description="Move 2 resources to &apos;WEB-INF&apos;" destination="WebContent/WEB-INF" element1="spring-mvc-demo-servlet.xml" element2="web.xml" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="2" stamp="1607303167627" updateReferences="true"/>
+</session>
