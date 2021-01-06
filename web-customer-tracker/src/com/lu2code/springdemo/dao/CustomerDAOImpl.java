@@ -20,6 +20,7 @@ public class CustomerDAOImpl implements CustomerDAO {
 	// inject hibernate session facotry '
 	@Autowired
 	private SessionFactory session;
+	 
 	
 	@Override
 	@Transactional
