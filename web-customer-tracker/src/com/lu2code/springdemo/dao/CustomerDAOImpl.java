@@ -20,7 +20,6 @@ public class CustomerDAOImpl implements CustomerDAO {
 	// inject hibernate session facotry '
 	@Autowired
 	private SessionFactory session;
-	 
 	
 	@Override
 	@Transactional
@@ -32,7 +31,7 @@ public class CustomerDAOImpl implements CustomerDAO {
 		
 		//create query 
 		Query<Customer> theQuery= 
-				currentSession.createQuery(" from Customer",Customer.class );
+				currentSession.createQuery(" from customer",Customer.class );
 		
 		//get the result 
 		

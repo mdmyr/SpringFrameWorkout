@@ -14,7 +14,6 @@ import com.lu2code.springdemo.entity.Customer;
  * This is the main controller for the DAO.
  */
 
-
 @Controller
 @RequestMapping("/customer")
 public class CustomerController {
