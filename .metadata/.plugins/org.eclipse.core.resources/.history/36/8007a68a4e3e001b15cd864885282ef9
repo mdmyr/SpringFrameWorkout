@@ -1,5 +1,0 @@
-package com.springHibernateJdbcTest;
-
-public class StudentEntity {
-
-}

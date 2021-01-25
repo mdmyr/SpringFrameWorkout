@@ -15,7 +15,7 @@ import javax.persistence.Table;
 @Table(name = "customer")
 public class CustomerEntity {
 	
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Id	
 	private String ID;
 	

@@ -1,7 +1,0 @@
-package com.springConstructorInjection;
-
-//Simple driver class which holds the data about the 
-//driver 
-public class DriverClass {
-
-}

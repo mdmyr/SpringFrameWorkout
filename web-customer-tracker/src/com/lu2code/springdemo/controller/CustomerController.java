@@ -29,7 +29,7 @@ public class CustomerController {
 			//get the customer from dao 
 			List<Customer>  theCustomers = customerDAO.getCustomers();
 			theModel.addAttribute("customers", theCustomers);
-			
+			theModel.addAttribute("New Customer Screen");
 			//add the customer to the dao model
 			return "list-customers";
 		}

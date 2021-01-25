@@ -7,4 +7,10 @@
 <fullyQualifiedTypeName name="javax.naming.Context"/>
 <fullyQualifiedTypeName name="com.beanLifeCycle.SedanCars"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
+<fullyQualifiedTypeName name="com.luv2code.springdemo.serviceLayer.CustomerService"/>
+<fullyQualifiedTypeName name="javax.transaction.Transactional"/>
+<fullyQualifiedTypeName name="com.luv2code.springdemo.entity.CustomerEntity"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
 </qualifiedTypeNameHistroy>

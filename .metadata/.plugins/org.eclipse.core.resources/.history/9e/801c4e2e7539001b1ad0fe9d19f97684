@@ -1,7 +1,0 @@
-package com.springmvcDropdown;
-
-
-//This is the landing page controller
-public class HomeController {
-
-}

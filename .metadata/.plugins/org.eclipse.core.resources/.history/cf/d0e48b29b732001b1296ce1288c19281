@@ -1,6 +1,0 @@
-package www.essentials.cars;
-
-public interface CarEssentials {
-	//must needed for the any four wheelers
-
-}

@@ -7,4 +7,5 @@ import com.luv2code.springdemo.entity.CustomerEntity;
 public interface ICustomerDAO {
 
 		List<CustomerEntity> getCustomer();
+		void saveCustomer(CustomerEntity addCustomer);
 }

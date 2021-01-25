@@ -1,8 +1,0 @@
-package www.SpringAnnotations;
-
-public class SuvImplementor {
-
-	public void carType() {
-		System.out.println("This is a SUV");
-	}
-}

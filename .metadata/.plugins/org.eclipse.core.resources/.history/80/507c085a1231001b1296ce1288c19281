@@ -1,6 +1,0 @@
-
-public interface Vehicle {
-
-	public void vehicleType();
-	public void vehicleColor();
-}

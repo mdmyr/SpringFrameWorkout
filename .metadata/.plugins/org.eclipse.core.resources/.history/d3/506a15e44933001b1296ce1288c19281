@@ -1,5 +1,0 @@
-package www.beanScope.com;
-
-public interface VehicleInterface {
-
-}

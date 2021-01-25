@@ -1,5 +1,0 @@
-package www.essentials.cars;
-
-public interface CarEssentials {
-
-}
